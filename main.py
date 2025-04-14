@@ -1,14 +1,9 @@
-import sys
-import os
-import nltk
 import pandas as pd
-
 from src.recommendation import recommend
 import streamlit as st
 
-                    
 
-# Custom CSS for glassmorphism with specified colors
+# Custom CSS for glass-morphism with specified colors
 st.markdown("""
     <style>
         body {
