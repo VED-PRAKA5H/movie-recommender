@@ -4,6 +4,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt_tab')  # it is not downloaded by default .
 
+
 def convert(obj):
     """
     Convert a string representation of a list of dictionaries into a list of names.
@@ -57,11 +58,12 @@ def convert_cast(obj):
     for item in ast.literal_eval(obj):
         # Append the 'name' value from each dictionary to the obj_list
         obj_list.append(item['name'])
-        if len(obj_list) ==3:
+        if len(obj_list) == 3:
             break
     
     # Return the final list of names
     return obj_list
+
 
 def fetch_director(obj):
     """
@@ -86,7 +88,7 @@ def fetch_director(obj):
     # untrusted input.
     for item in ast.literal_eval(obj):
         # Append the 'name' value from each dictionary to the obj_list
-        if item['job'].lower() =='director':
+        if item['job'].lower() == 'director':
             # Append the 'name' value from each dictionary to the obj_list
             director_list.append(item['name'])
             break
