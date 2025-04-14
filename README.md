@@ -1,14 +1,18 @@
 # Movie Recommender System
 
+---
 ## Project Overview
 The Movie Recommender System is a machine learning project that provides personalized movie recommendations based on user preferences and historical data. This project utilizes collaborative filtering and content-based filtering techniques to suggest movies that users are likely to enjoy. By implementing this system, I aimed to enhance user experience and engagement in movie selection.
 
+## App Screenshot
+![App Screenshot](assets/img.png)
+
+---
 ## Key Features
 - **Data Collection**: Utilized the PMDB 500 Movie Dataset, which includes detailed information about movies, such as metadata and credits.
 - **Data Preprocessing**: Cleaned and prepared the dataset for analysis, handling missing values and merging datasets effectively.
 - **Recommendation Algorithms**: Implemented both content-based and collaborative filtering algorithms to generate movie recommendations based on user behavior and movie attributes.
 - **Web Application Development**: Developed a user-friendly web interface that allows users to interact with the recommendation system seamlessly.
-- **Deployment**: Deployed the application on a cloud platform to make it accessible to users.
 
 ## Project Structure
 ```text
@@ -24,7 +28,7 @@ movie-recommender/
 │ └── model_training.ipynb # Model training and evaluation
 │
 ├── src/ # Source code for the project
-│ ├── `__init__.py` # Makes src a Python package
+│ ├── __init__.py # Makes src a Python package
 │ ├── data_preprocessing.py # Data preprocessing functions
 │ ├── model.py # Model definition and training functions
 │ └── utils.py # Utility functions
@@ -41,7 +45,6 @@ movie-recommender/
 - **Programming Languages**: Python==3.12.4
 - **Libraries**: Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib, Flask
 - **Tools**: Jupyter Notebook, Git, GitHub
-- **Deployment**: Heroku/AWS
 
 ## Installation
 To set up the project, follow these steps:
@@ -57,5 +60,7 @@ To set up the project, follow these steps:
    ```
 # Usage
   ```bash
-    python main.py
+  $ python src/model.py
+  $ streamlit run main.py
+  ```
 
